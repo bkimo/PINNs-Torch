@@ -42,7 +42,7 @@ PINNs-Torch requires following dependencies to be installed:
 Then, you can install PINNs-Torch itself via \[pip\]:
 
 ```bash
-pip install pinnstorch
+pip install pinnstorch requests
 ```
 
 If you intend to introduce new functionalities or make code modifications, we suggest duplicating the repository and setting up a local installation:
