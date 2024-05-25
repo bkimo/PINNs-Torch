@@ -33,7 +33,7 @@ For more information, please refer to our paper:
 
 ## Installation
 
-PINNs-Torch requires following dependencies to be installed:
+PINNs-Torch requires the following dependencies to be installed:
 
 - [PyTorch](https://pytorch.org) >=2.0.0
 - [PyTorch Lightning](https://lightning.ai/) >= 2.0.0
@@ -41,22 +41,24 @@ PINNs-Torch requires following dependencies to be installed:
 
 Then, you can install PINNs-Torch itself via \[pip\]:
 
-```bash
-pip install pinnstorch requests
-```
-
-If you intend to introduce new functionalities or make code modifications, we suggest duplicating the repository and setting up a local installation:
+**Remark**: If you intend to introduce new functionalities or make code modifications, we suggest duplicating the repository and setting up a local installation.)
 
 ```bash
 git clone https://github.com/rezaakb/pinns-torch
 cd pinns-torch
 
-# [OPTIONAL] create conda environment
-conda create -n myenv python=3.9
-conda activate myenv
+# [OPTIONAL] Create virtual environment: Do "pip install virtualenv" if you have not installed it yet.
+python -m venv env
+source env/bin/activate
 
 # install package
-pip install -e .
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install lightning
+pip install hydra-core --upgrade
+pip install pinnstorch requests
+
+# [OPTIONAL] Deactivate virtual environment
+deactivate
 ```
 
 ## Quick start
