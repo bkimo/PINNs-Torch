@@ -50,12 +50,6 @@ cd pinns-torch
 # [REMARK] Create a conda environment by executing the following yaml in the pinns-torch directory to set up some pip dependencies properly.
 conda env create -f environment.yaml
 
-```
-# Activate and deactivate [env]
-conda activate [env]
-conda deactivate
-```
-
 ## Quick start
 
 Explore a variety of implemented examples within the [examples](examples) folder. To run a specific code, such as the one for the Navier-Stokes PDE, you can use:
