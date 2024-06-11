@@ -47,18 +47,13 @@ Then, you can install PINNs-Torch itself via \[pip\]:
 git clone https://github.com/rezaakb/pinns-torch
 cd pinns-torch
 
-# [OPTIONAL] Create virtual environment: Do "pip install virtualenv" if you have not installed it yet.
-python -m venv env
-source env/bin/activate
+# [REMARK] Create a conda environment by executing the following yaml in the pinns-torch directory to set up some pip dependencies properly.
+conda env create -f environment.yaml
 
-# install package
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install lightning
-pip install hydra-core --upgrade
-pip install pinnstorch requests
-
-# [OPTIONAL] Deactivate virtual environment
-deactivate
+```
+# Activate and deactivate [env]
+conda activate [env]
+conda deactivate
 ```
 
 ## Quick start
