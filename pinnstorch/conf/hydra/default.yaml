@@ -2,9 +2,9 @@
 # output directory, generated dynamically on each run
 
 run:
-  dir: ${paths.root_dir}/examples/${task_name}/outputs/${now:%H-%M-%S}
+  dir: ${paths.root_dir}/${task_name}/outputs/${now:%Y-%m-%d-%H-%M-%S}
 sweep:
-  dir: ${paths.root_dir}/examples/${task_name}/outputs/multi_run/${now:%H-%M-%S}
+  dir: ${paths.root_dir}/${task_name}/outputs/multi_run/${now:%Y-%m-%d-%H-%M-%S}
   subdir: ${hydra.job.num}
 
 job_logging:
